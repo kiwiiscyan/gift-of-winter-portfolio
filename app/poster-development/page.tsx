@@ -92,31 +92,31 @@ export default function PosterDevelopmentPage() {
           {/* Horizontal grid (not vertical); includes the 5th image */}
           <div className="grid gap-4 md:grid-cols-5">
             <ThumbCard
-              title="Development 1"
+              title="Design 1"
               src="/images/designInteraction-1.jpg"
               aspect="aspect-[3/4]"
               fit="object-contain"
             />
             <ThumbCard
-              title="Development 2"
+              title="Design 2"
               src="/images/designInteraction-2.jpg"
               aspect="aspect-[3/4]"
               fit="object-contain"
             />
             <ThumbCard
-              title="Development 3"
+              title="Design 3"
               src="/images/designInteraction-3.jpg"
               aspect="aspect-[3/4]"
               fit="object-contain"
             />
             <ThumbCard
-              title="Development 4"
+              title="Design 4"
               src="/images/designInteraction-4.jpg"
               aspect="aspect-[3/4]"
               fit="object-contain"
             />
             <ThumbCard
-              title="Development 5"
+              title="Design 5"
               src="/images/designInteraction-5.jpg"
               aspect="aspect-[3/4]"
               fit="object-contain"

@@ -20,7 +20,7 @@ export default function ReflectionPage() {
 
       {/* Content Card */}
       <section className="rounded-2xl border border-neutral-200 bg-white/70 p-6 shadow-sm backdrop-blur md:p-8">
-        <div className="prose prose-neutral max-w-none">
+        <div className="mt-4 space-y-4 prose prose-neutral max-w-none">
           <p>
             At the beginning of this assignment, I felt very confused and unsure
             about what to do. Even though I had learned how to use some Adobe

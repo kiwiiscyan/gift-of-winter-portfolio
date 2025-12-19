@@ -19,9 +19,13 @@ function ThumbCard({
         <span className="text-xs text-black/50">Asset</span>
       </div>
 
-      <div
+      {/* CLICKABLE IMAGE – layout unchanged */}
+      <a
+        href={src}
+        target="_blank"
+        rel="noopener noreferrer"
         className={[
-          "relative mt-3 w-full overflow-hidden rounded-xl border border-black/10 bg-christmas-cream",
+          "relative mt-3 block w-full overflow-hidden rounded-xl border border-black/10 bg-christmas-cream",
           aspect,
         ].join(" ")}
       >
@@ -32,7 +36,7 @@ function ThumbCard({
           className={fit}
           sizes="(max-width: 768px) 100vw, 25vw"
         />
-      </div>
+      </a>
     </div>
   );
 }

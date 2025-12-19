@@ -126,9 +126,9 @@ export default function ProcessPage() {
           description="Interface and interaction planning: audio notes, animation steps, interaction rules, and technical notes."
         >
           <div className="grid gap-4 md:grid-cols-3">
-            <ThumbCard title="UI Storyboard 1" src="/images/ui-storyboard-1.jpg" aspect="aspect-[3/4]" fit="object-contain" />
-            <ThumbCard title="UI Storyboard 2" src="/images/ui-storyboard-2.jpg" aspect="aspect-[3/4]" fit="object-contain" />
-            <ThumbCard title="UI Storyboard 3" src="/images/ui-storyboard-3.jpg" aspect="aspect-[3/4]" fit="object-contain" />
+            <ThumbCard title="UI Storyboard 1" src="/images/UI-storyboard-1.jpg" aspect="aspect-[3/4]" fit="object-contain" />
+            <ThumbCard title="UI Storyboard 2" src="/images/UI-storyboard-2.jpg" aspect="aspect-[3/4]" fit="object-contain" />
+            <ThumbCard title="UI Storyboard 3" src="/images/UI-storyboard-3.jpg" aspect="aspect-[3/4]" fit="object-contain" />
           </div>
         </SectionBlock>
       </section>

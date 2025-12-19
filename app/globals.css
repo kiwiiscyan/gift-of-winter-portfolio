@@ -1,16 +1,70 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+
+/* ---------- Base typography ---------- */
+:root {
+  --font-body: ui-serif;
+  --font-section: ui-serif;
+  --font-christmas: ui-serif;
+}
+
+body {
+  font-family: var(--font-body);
+  background: linear-gradient(180deg, rgba(255,247,237,1) 0%, rgba(255,255,255,1) 55%, rgba(255,247,237,1) 100%);
+  color: #3b2a1f; /* warm brown */
+}
+
+/* Foremost Italic: section headers */
+.h-font {
+  font-family: var(--font-section);
+  font-style: italic;
+  letter-spacing: 0.01em;
+}
+
+/* Christmas Squad: hero title */
+.christmas-header {
+  font-family: var(--font-christmas);
+  letter-spacing: 0.02em;
+  line-height: 1.05;
+  text-rendering: geometricPrecision;
+  -webkit-font-smoothing: antialiased;
+  text-shadow: 0 1px 0 rgba(0,0,0,0.06);
+}
 
 :root{
-  --font-dream: ui-sans-serif;
   --font-body: ui-serif;
+  --font-section: ui-serif;
+  --font-christmas: ui-serif;
 }
 
 body{
   font-family: var(--font-body);
+  color: #3b2a1f; /* warm brown */
+  background: linear-gradient(
+    180deg,
+    rgba(255,247,237,1) 0%,
+    rgba(255,255,255,1) 55%,
+    rgba(255,247,237,1) 100%
+  );
 }
 
 .h-font{
-  font-family: var(--font-dream);
+  font-family: var(--font-section);
+  font-style: italic;
+  letter-spacing: 0.01em;
+}
+
+.christmas-header{
+  font-family: var(--font-christmas);
+  letter-spacing: 0.02em;
+  line-height: 1.05;
+  -webkit-font-smoothing: antialiased;
+  text-shadow: 0 1px 0 rgba(0,0,0,0.06);
+}
+
+/* Warm festive “premium” header glow background */
+.warm-hero{
+  background:
+    radial-gradient(900px 320px at 12% 18%, rgba(245,158,11,0.18) 0%, rgba(245,158,11,0) 60%),
+    radial-gradient(900px 320px at 82% 12%, rgba(185,28,28,0.14) 0%, rgba(185,28,28,0) 55%),
+    radial-gradient(700px 280px at 75% 82%, rgba(22,101,52,0.12) 0%, rgba(22,101,52,0) 55%);
 }

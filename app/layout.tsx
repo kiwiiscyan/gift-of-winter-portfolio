@@ -2,10 +2,25 @@
 import "./globals.css";
 import localFont from "next/font/local";
 import { Libre_Baskerville } from "next/font/google";
+import TopNav from "@/components/TopNav";
+import type { Metadata } from "next";
 
-const dreamAvenue = localFont({
-  src: "../public/fonts/DreamAvenue.woff2",
-  variable: "--font-dream",
+export const metadata: Metadata = {
+  title: "The Gift of Winter",
+  icons: {
+    icon: "/christmas-tree.svg",
+  },
+};
+
+const christmasSquad = localFont({
+  src: "../public/fonts/ChristmasSquad.otf",
+  variable: "--font-christmas",
+  display: "swap",
+});
+
+const foremostItalic = localFont({
+  src: "../public/fonts/ForemostItalic.otf",
+  variable: "--font-section",
   display: "swap",
 });
 
@@ -18,8 +33,13 @@ const libre = Libre_Baskerville({
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" className={`${dreamAvenue.variable} ${libre.variable}`}>
-      <body>{children}</body>
+    <html
+      lang="en"
+      className={`${christmasSquad.variable} ${foremostItalic.variable} ${libre.variable}`}
+    >
+      <body>
+        <TopNav />{children}
+      </body>
     </html>
   );
 }
